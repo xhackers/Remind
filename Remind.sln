@@ -13,6 +13,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Remind", "Remind\Remind\Rem
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Remind\Remind\Remind.projitems*{febe9ad2-606c-45d7-abcb-7ff124fde900}*SharedItemsImports = 4
+		Remind\Remind\Remind.projitems*{695e9d3f-b115-4c86-9871-d0a129b8ed55}*SharedItemsImports = 4
+		Remind\Remind\Remind.projitems*{6b9250c9-74d0-4d09-a4f4-08a8b9d41f46}*SharedItemsImports = 4
 		Remind\Remind\Remind.projitems*{015f08f2-14d7-4e14-aa38-5dfbf94b1b63}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
