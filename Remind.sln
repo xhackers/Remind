@@ -81,9 +81,9 @@ Global
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|ARM.Deploy.0 = Debug|ARM
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.ActiveCfg = Debug|ARM
+		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.Build.0 = Debug|ARM
+		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|Mixed Platforms.Deploy.0 = Debug|ARM
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|x86.ActiveCfg = Debug|x86
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|x86.Build.0 = Debug|x86
 		{695E9D3F-B115-4C86-9871-D0A129B8ED55}.Debug|x86.Deploy.0 = Debug|x86
@@ -192,5 +192,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Remind\Remind.Android\Remind.Android.csproj
 	EndGlobalSection
 EndGlobal

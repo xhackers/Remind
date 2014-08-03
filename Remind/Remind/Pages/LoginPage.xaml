@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+              xmlns:controls="clr-namespace:Xamarin.Forms.Labs.Controls;assembly=Xamarin.Forms.Labs"
+             x:Class="Remind.LoginPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0, 20, 0, 0
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                0, 0, 0, 0
+            </OnPlatform.Android>
+            <OnPlatform.WinPhone>
+                0, 0, 0, 0
+            </OnPlatform.WinPhone>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+	
+        <StackLayout>
+
+            <controls:ImageButton x:Name="FacebookLogin" Text="Lo" TextColor="#ffffff" BackgroundColor="#dc021e" HeightRequest="300" WidthRequest="100" Orientation="ImageToLeft"  ImageHeightRequest="200" ImageWidthRequest="200">
+                <controls:ImageButton.Source>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                           <OnPlatform.WinPhone>
+                            <FileImageSource File="Images/icon_facebook.png"/>
+                        </OnPlatform.WinPhone>
+                    </OnPlatform>
+                </controls:ImageButton.Source>
+            </controls:ImageButton>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
