@@ -1,4 +1,16 @@
-Remind
+Reminder
 ======
 
-Reminder app is a showcase app that runs through most of the platform features one can encounter during Xamarin development
+Simple B'day reminder written in Xamarin.Forms.
+
+Uses the following features - 
+
+* Xamarin.Auth
+* Xamarin.Social
+* PushSharp
+* Hangfire
+* Social Authentication(Facebook)
+* ASP.net Web API
+* AppHarbor
+
+ 
