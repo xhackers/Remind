@@ -9,6 +9,16 @@
     <Import_RootNamespace>Remind</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Annotations\Annotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ILogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NotifyRootObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SocialInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SocialRootObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ProfileViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\BaseContentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginOathPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ProfilePage.cs" />
   </ItemGroup>
 </Project>
