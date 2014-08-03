@@ -19,7 +19,7 @@ namespace Remind.Model
         public FacebookInfo()
         {
             clientId = "1484841145092065";  // your OAuth2 client id
-            scope = "email, user_friends";//"user_about_me,read_stream,email,user_birthday,friends,friendlists"; // the scopes for the particular API you're accessing, delimited by "+" symbols
+            scope = "email, user_friends, user_birthday";//"user_about_me,read_stream,email,user_birthday,friends,friendlists"; // the scopes for the particular API you're accessing, delimited by "+" symbols
             authorizeUrl = new Uri("https://m.facebook.com/dialog/oauth/"); // the auth URL for the service
             redirectUrl = new Uri("http://www.facebook.com/connect/login_success.html");// the redirect URL for the service
             userInfoAPI = "https://graph.facebook.com/me";
