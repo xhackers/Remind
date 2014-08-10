@@ -9,20 +9,43 @@
     <Import_RootNamespace>Remind</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Annotations\Annotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Common\NotifyPropertyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomControls\CustomImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\ReminderItemDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\ReminderItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ILogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NotifyRootObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ReminderItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SocialInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SocialRootObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ProfileViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\BaseContentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\LandingPage.xaml.cs">
+      <DependentUpon>LandingPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginOathPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PageViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PageViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ProfilePage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\LandingPage.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

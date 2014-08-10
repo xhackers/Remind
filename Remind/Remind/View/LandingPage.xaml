@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 
+                        
+					   x:Class="Remind.View.LandingPage">
+    <BaseContentPage.Content>
+       
+        <ListView x:Name="listView" >
+            <ListView.ItemTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout>
+
+                            <Label Text="{Binding Description}" />
+                        </StackLayout>
+                    </ViewCell.View>
+                    
+                </ViewCell>
+               
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </BaseContentPage.Content>
+</BaseContentPage>

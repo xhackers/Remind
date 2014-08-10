@@ -1,13 +1,13 @@
-﻿using SQLite;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.IO;
-using Remind.Models;
+using Remind.Model;
 #if WINDOWS_PHONE
 using Windows.Storage;
-using Remind.Models;
+using Remind.Model;
 #endif
 namespace Remind.Data
 {
